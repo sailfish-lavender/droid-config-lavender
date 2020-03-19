@@ -5,6 +5,7 @@ Description: Pattern with packages for lavender HW Adaptation
 Name: jolla-hw-adaptation-lavender
 Requires:
 - droid-hal-lavender
+- droid-hal-lavender-detritus
 - droid-hal-lavender-img-boot
 - droid-hal-lavender-kernel-modules
 - droid-config-lavender-sailfish
