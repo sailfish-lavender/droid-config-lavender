@@ -21,6 +21,12 @@ Requires:
 - libhybris-libGLESv2
 - libhybris-libwayland-egl
 
+# Telephony
+- ofono-ril-binder-plugin
+
+# Bluetooth
+- bluebinder
+
 # Sensors
 - hybris-libsensorfw-qt5
 
@@ -32,6 +38,8 @@ Requires:
 - qt5-plugin-generic-evdev
 
 - pulseaudio-modules-droid
+- pulseaudio-modules-droid-glue
+- pulseaudio-modules-droid-hidl
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
@@ -46,8 +54,7 @@ Requires:
 - gstreamer1.0-plugins-base
 - gstreamer1.0-plugins-bad
 - nemo-gstreamer1.0-interfaces
-# For devices with droidmedia and gst-droid built, see HADK pdf for more information
-#- gstreamer1.0-droid
+- gstreamer1.0-droid
 
 # This is needed for notification LEDs
 - mce-plugin-libhybris
@@ -68,8 +75,8 @@ Requires:
 - geoclue-provider-hybris
 
 # For FM radio on some QCOM devices
-#- qt5-qtmultimedia-plugin-mediaservice-irisradio
-#- jolla-mediaplayer-radio
+- qt5-qtmultimedia-plugin-mediaservice-irisradio
+- jolla-mediaplayer-radio
 
 # NFC for devices using Android 8 or newer as base
 #- nfcd-binder-plugin
