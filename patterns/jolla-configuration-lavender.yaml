@@ -37,5 +37,8 @@ Requires:
 # to improve camera startup times and the like
 - mapplauncherd-booster-silica-qt5-media
 
+# Adds a flashlight shortcut to eventsview
+- jolla-settings-system-flashlight
+
 Summary: Jolla Configuration lavender
 
