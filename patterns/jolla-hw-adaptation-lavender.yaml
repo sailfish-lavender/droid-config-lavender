@@ -37,11 +37,14 @@ Requires:
 # Needed for /dev/touchscreen symlink
 - qt5-plugin-generic-evdev
 
+# Audio
 - pulseaudio-modules-droid
-- pulseaudio-modules-droid-glue
 - pulseaudio-modules-droid-hidl
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
+
+# Camera
+- audioflingerglue
 
 # These need to be per-device due to differing backends (fbdev, eglfs, hwc, ..?)
 - qt5-qtwayland-wayland_egl
@@ -50,11 +53,11 @@ Requires:
 
 # Add GStreamer v1.0 as standard
 - gstreamer1.0
+- gstreamer1.0-droid
 - gstreamer1.0-plugins-good
 - gstreamer1.0-plugins-base
 - gstreamer1.0-plugins-bad
 - nemo-gstreamer1.0-interfaces
-- gstreamer1.0-droid
 
 # This is needed for notification LEDs
 - mce-plugin-libhybris
@@ -75,12 +78,14 @@ Requires:
 - geoclue-provider-hybris
 
 # For FM radio on some QCOM devices
-- qt5-qtmultimedia-plugin-mediaservice-irisradio
-- jolla-mediaplayer-radio
+# FIXME: Currently we haven't figured out how to get it to work yet.
+# 
+#- qt5-qtmultimedia-plugin-mediaservice-irisradio
+#- jolla-mediaplayer-radio
 
-# NFC for devices using Android 8 or newer as base
-#- nfcd-binder-plugin
-#- jolla-settings-system-nfc
+# On Hybris 9 adaptations, we'll need to have a dummy netd service
+# if we want to use mobile data.
+- dummy_netd
 
 Summary: Jolla HW Adaptation lavender
 

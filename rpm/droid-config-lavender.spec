@@ -21,6 +21,9 @@
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 
+# Obsolete unnecessary PA glue module (we still need audioflingerglue for camera)
+Obsoletes: pulseaudio-modules-droid-glue
+
 %include droid-configs-device/droid-configs.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
