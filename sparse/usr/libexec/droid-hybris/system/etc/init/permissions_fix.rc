@@ -1,0 +1,7 @@
+# Copyright (C) 2020 - Dreemurrs Embedded Labs
+#
+# CONFIDENTIAL AND PROPRIETARY
+# Use is subject to license terms included in the distribution.
+
+on property:sys.boot_completed=1
+    chown graphics graphics /sys/devices/virtual/graphics/fb0/idle_time
