@@ -7,6 +7,9 @@ service audioserver audioserver_HYBRIS_DISABLED
 service cameraserver cameraserver_HYBRIS_DISABLED
     disabled
     override
+service dpmd dpmd_HYBRIS_DISABLED
+    disabled
+    override
 service installd installd_HYBRIS_DISABLED
     disabled
     override
