@@ -21,6 +21,10 @@
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 
+# Device-specific usb-moded configuration
+Provides: usb-moded-configs
+Obsoletes: usb-moded-defaults
+
 # Obsolete unnecessary PA glue module (we still need audioflingerglue for camera)
 Obsoletes: pulseaudio-modules-droid-glue
 
