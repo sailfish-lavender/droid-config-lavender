@@ -1,4 +1,4 @@
-CPUCHECK_STRING="Qualcomm Technologies, Inc MSM8998"
+CPUCHECK_STRING="Qualcomm Technologies, Inc SDM660"
 
 PART_1="boot"
 PART_REAL_1="mmcblk0p60"
