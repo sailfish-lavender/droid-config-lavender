@@ -68,8 +68,12 @@ Requires:
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 - rfkill
 
-# enable device lock and allow to select untrusted software
-- jolla-devicelock-daemon-encsfa
+# Community Fingerprint daemon
+- sailfish-fpd-community
+- sailfish-devicelock-fpd
+- droid-biometry-fp
+# This is needed on devices like the RN7.
+- droid-fake-crypt
 
 # Enable home encryption
 #- sailfish-device-encryption
