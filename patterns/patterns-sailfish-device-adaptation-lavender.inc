@@ -71,6 +71,9 @@ Requires: geoclue-provider-hybris
 #Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
 #Requires: jolla-mediaplayer-radio
 
+Provides: ofono-configs
+Obsoletes: ofono-configs-mer
+
 # NFC support
 # 1. binder plugin requires Android 8 or a newer base
 # 2. pn54x plugin talks directly to pn54x driver
