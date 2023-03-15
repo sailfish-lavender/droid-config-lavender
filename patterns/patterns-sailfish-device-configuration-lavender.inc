@@ -17,6 +17,9 @@ Requires: sailfish-content-graphics-z%{icon_res}
 # For multi-SIM devices
 Requires: jolla-settings-networking-multisim
 
+# Flashlight shortcut
+Requires: jolla-settings-system-flashlight
+
 # For devices which support NFC
 #Requires: jolla-settings-system-nfc
 #Requires: nfcd-dbuslog-plugin
@@ -36,6 +39,25 @@ Requires: geoclue-provider-mlsdb
 # Devices with 2G or more memory should also include this booster
 # to improve camera startup times and the like
 Requires: mapplauncherd-booster-silica-qt5-media
+
+Requires: csd
+
+Recommends: jolla-developer-mode
+Recommends: strace
+Recommends: vim-enhanced
+Recommends: less
+Recommends: busybox-static
+Recommends: openssh-server
+Recommends: zypper
+
+# Extras
+Recommends: net-tools
+Recommends: openssh-clients
+Recommends: htop
+Recommends: nano
+Recommends: rsync
+Recommends: gnu-bash
+Obsoletes: busybox-symlinks-bash
 
 %description -n patterns-sailfish-device-configuration-lavender
 Pattern with packages for lavender configurations
