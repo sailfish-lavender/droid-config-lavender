@@ -4,6 +4,7 @@
 %package -n patterns-sailfish-device-adaptation-lavender
 Summary: Jolla HW Adaptation lavender
 Requires: droid-hal-lavender
+Requires: droid-hal-lavender-detritus
 Requires: droid-hal-lavender-img-boot
 Requires: droid-hal-lavender-kernel-modules
 Requires: droid-config-lavender-sailfish
@@ -73,6 +74,8 @@ Requires: geoclue-provider-hybris
 
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
+
+Requires: dummy_netd
 
 # NFC support
 # 1. binder plugin requires Android 8 or a newer base

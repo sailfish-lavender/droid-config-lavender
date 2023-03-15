@@ -16,7 +16,9 @@
 # For 4-5.5" device screen sizes of 16:9 ratio, use this formula (hold portrait):
 # pixel_ratio = 4.5/DiagonalDisplaySizeInches * HorizontalDisplayResolution/540
 # Other screen sizes and ratios will require more trial-and-error.
-%define pixel_ratio 1.0
+%define pixel_ratio 1.75
+
+Obsoletes: pulseaudio-modules-droid-glue
 
 %include droid-configs-device/droid-configs.inc
 %include patterns/patterns-sailfish-device-adaptation-lavender.inc
