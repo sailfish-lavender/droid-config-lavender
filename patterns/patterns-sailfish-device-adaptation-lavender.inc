@@ -20,6 +20,9 @@ Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
 
+# Bluetooth
+Requires: bluebinder
+
 # Sensors
 Requires: hybris-libsensorfw-qt5
 
@@ -71,6 +74,11 @@ Requires: geoclue-provider-hybris
 # For FM radio on some QCOM devices
 #Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
 #Requires: jolla-mediaplayer-radio
+
+# For Fingerprint
+Requires: sailfish-fpd-community
+Requires: droid-biometry-fp
+Requires: droid-fake-crypt
 
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
