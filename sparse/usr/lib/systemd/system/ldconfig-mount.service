@@ -1,10 +1,12 @@
 [Unit]
 Description=Droid mount for /system/etc/ld.config.28.txt
-Before=local-fs.target
+After=system.mount vendor.mount
+DefaultDependencies=no
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh -c 'mount --bind /usr/libexec/droid-hybris/system/etc/ld.config.28.txt /system/etc/ld.config.28.txt'
+RemainAfterExit=true
+ExecStart=/bin/mount --bind /usr/libexec/droid-hybris/system/etc/ld.config.28.txt /system/etc/ld.config.28.txt
 
 [Install]
 WantedBy=local-fs.target
