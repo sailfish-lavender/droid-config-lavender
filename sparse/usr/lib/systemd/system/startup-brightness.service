@@ -1,0 +1,12 @@
+[Unit]
+Description=Fix screen being completely blank on startup
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'echo 2047 > /sys/class/leds/lcd-backlight/brightness'
+Conflicts=actdead.target factory-test.target rescue.target
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

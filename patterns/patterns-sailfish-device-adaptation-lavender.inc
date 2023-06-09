@@ -21,7 +21,7 @@ Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
 
 # Bluetooth
-Requires: bluebinder
+# Requires: bluebinder
 
 # Sensors
 Requires: hybris-libsensorfw-qt5

@@ -1,0 +1,9 @@
+[Unit]
+Description=Droid post-startup script
+After=bluetooth.service
+
+[Service]
+ExecStart=/usr/bin/droid/droid-post-startup.sh
+
+[Install]
+WantedBy=graphical.target
